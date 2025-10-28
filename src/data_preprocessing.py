@@ -22,3 +22,6 @@ def get_data() -> tuple[pd.DataFrame, pd.DataFrame]:
 
     except Exception as e:
         print("Error in data preprocessing: ", e)
+        
+def get_new_data():
+    return
