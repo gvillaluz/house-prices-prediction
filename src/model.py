@@ -1,6 +1,8 @@
-from sklearn.linear_model import LinearRegression
-from sklearn.preprocessing import PolynomialFeatures, StandardScaler
-from sklearn.pipeline import make_pipeline, Pipeline
+from xgboost import XGBRegressor
 
 def build_model():
-    return LinearRegression()
+    return XGBRegressor(
+        n_estimator=3000,
+        learning_rate=0.02,
+        max_depth=3
+    )
